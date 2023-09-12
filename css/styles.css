@@ -1,33 +1,8 @@
 :root{
-background-color:#FFF;
-}
-.first{
-    background-color: #2F303A;
-}
-h1{
-    color: #FFF;
-}
-button{
-background-color: #2196F3;
-}
-button{
-    color: #FFF ;
-}
-nav{
-    color:  #2196F3;
-}
-.footer{
-    background-color: #2F303A;
-}
-footer>p{
-    color: #FFF;
-}
-.second{
-    background-color: #F5F4FA;
-}
-.second>p{
-    color: #757575;
-}
-.span{
-    color:#2196F3 ;
+--accent-color:#2196F3;
+--main-color:#000;
+--white-color:#FFF;
+--bg-color:#2F303A;
+--grey-color:#757575;
+--add-color:#F5F4FA;
 }
