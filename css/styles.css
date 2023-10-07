@@ -28,7 +28,7 @@ body {
  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
-  text-decoration: underline;
+ 
 }
 .info-link-item{
   color:var(--add-bg-color);
