@@ -29,11 +29,8 @@ font-weight: 500;
 letter-spacing: 0.28px;
 text-decoration: none;
   }
-  .nav-item-link:hover{
+  .nav-item-link:hover.nav-item-link:focus {
     color: var(--accent-color);
-  }
-  .nav-item-link:focus{
-    background-color: var(--white-color);
   }
   .info-link-item{
     color:var(--add-bg-color);
@@ -42,23 +39,10 @@ font-weight: 500;
 letter-spacing: 0.28px;
 text-decoration: none;
   }
-  .list.info .info-link-item{
-    color:var(--add-bg-color);
-    text-decoration: none;
-  }
-  .list.info .info-item:hover{
+  .info-item:hover .list.info a:focus{
       color: var(--accent-color);
       
-  }
-  .list.info a{
-    color: var(--add-bg-color);
-    text-decoration: none;
-  }
-  .list.info a:focus{
-    background-color: var(--white-color);
-  }
-  
-  
+  } 
   .hero-title {
     color: var(--white-color);
     text-align: center;
@@ -187,7 +171,7 @@ text-decoration: none;
   background-color: var(--white-color);
 }
 
-  .filters-item-btn{
+  .projects-item-btn{
     color: var(--white-color);
   text-align: center;
   font-size: 16px;
