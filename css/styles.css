@@ -173,7 +173,7 @@ text-decoration: none;
 
   .projects-item-btn{
    background-color: var(--white-color);
-    color: var(--white-color);
+    color: var(--main-color);
     font-family: Roboto;
   text-align: center;
   font-size: 16px;
@@ -183,6 +183,7 @@ text-decoration: none;
   }
   .projects-item-btn:hover{
 background-color: var(--accent-color);
+color: var(--white-color);
   }
   .projects-item-subtitle{
     color: var(--main-color);
