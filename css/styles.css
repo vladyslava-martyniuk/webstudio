@@ -29,7 +29,7 @@ font-weight: 500;
 letter-spacing: 0.28px;
 text-decoration: none;
   }
-  .nav-item-link:hover .nav-item-link:focus {
+  .nav-item-link:hover, .nav-item-link:focus {
     color: var(--accent-color);
   }
   .info-link-item{
