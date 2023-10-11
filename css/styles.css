@@ -172,12 +172,17 @@ text-decoration: none;
 }
 
   .projects-item-btn{
+   background-color: var(--white-color);
     color: var(--white-color);
+    font-family: Roboto;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px; 
   letter-spacing: 0.48px;
+  }
+  .projects-item-btn:hover{
+background-color: var(--accent-color);
   }
   .projects-item-subtitle{
     color: var(--main-color);
