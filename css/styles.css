@@ -128,19 +128,18 @@ text-decoration: none;
     color:white;
   }
   .filters-item-btn{
-   background-color: var(--white-color);
     color: var(--main-color);
-    font-family: Roboto;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px; 
-  letter-spacing: 0.48px;
-  }
-  .fliters-item-btn:hover{
-background-color: var(--accent-color);
-color: var(--white-color);
-  }
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px; 
+letter-spacing: 0.48px;
+   }
+.filters-item-btn:hover{
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
   .projects-item-subtitle{
     color: var(--main-color);
 font-size: 18px;
