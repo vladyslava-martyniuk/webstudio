@@ -59,13 +59,13 @@ img {
     letter-spacing: 0.78px;
   }
   .container{
-    width: 1223px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
   }
   .header{
-padding-top: 32px;
-padding-bottom: 32px;
+padding-top: 24px;
+padding-bottom: 25px;
   }
   .nav {
     font-size: 14px;
