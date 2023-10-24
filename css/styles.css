@@ -57,20 +57,20 @@ img {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-  }
-  .container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    justify-self: left;
   }
   .header{
 padding-top: 24px;
 padding-bottom: 25px;
+display: flex;
+justify-content: space-around;
+align-items: center; 
   }
   .nav {
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.28px; 
+    margin-right:  auto;
   }
 
   .nav-item-link{
@@ -79,9 +79,18 @@ font-size: 14px;
 font-weight: 500;
 letter-spacing: 0.28px;
 text-decoration: none;
+justify-content: start;
   }
   .nav-item-link:hover, .nav-item-link:focus {
     color: var(--accent-color);
+  } 
+  .nav-list {
+    display:flex;
+    flex-direction:row; 
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: flex-start; 
+    margin-left: 93px;
   }
   .info-link-item{
     color:var(--add-bg-color);
@@ -89,9 +98,22 @@ text-decoration: none;
 font-weight: 500;
 letter-spacing: 0.28px;
 text-decoration: none;
+padding-right: ;
   }
   .info-link-item:hover, .info-link-item:focus{
     color: var(--accent-color);
+} 
+.list-info {
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+}
+.info-item{
+  display: inline-block;
+  margin-left: auto;
+  padding: 20px;
 }
 .hero{
   background-color:var(--bg-color);
@@ -115,10 +137,21 @@ text-decoration: none;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
+    background-color: var(--accent-color);
+    display: block;
+    margin: 0 auto;
   }
   .advantages{
     padding-top: 94px;
     padding-bottom: 94px;
+    justify-content: center;
+    margin-left: 200px;
+  } 
+  .list-adventeges{
+    display: flex;
+   gap: 30px;}
+  .advantages-item {
+    display: inline-block; 
   }
   .advantages-item-subtitle {
     color: var(--main-color);
@@ -134,27 +167,26 @@ text-decoration: none;
     line-height: 24px;
     letter-spacing: 0.42px;
   }
-  .performance{
-    padding-top: 0px;
-    padding-bottom: 94px;
-  }
-  .performance-title {
-    color: var(--main-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-  }
-  .workers{
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .workers-title {
-    color: var(--main-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
+  .advantages-item-text {
+    display: block;
+  } 
+    .performance{
+      padding-top: 0px;
+      padding-bottom: 94px;
+      justify-content: center;
+    }
+    .performance-title {
+      color: var(--main-color);
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1.08px; 
+      padding: 50px;
+    }
+  .list-performance { 
+  display: flex; 
+    gap: 50px;
+      justify-content: center;
   }
   .workers-item-subtitle {
     color:var(--main-color);
@@ -174,6 +206,9 @@ text-decoration: none;
     background-color: var(--bg-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .logo-footer{
     color: var(--white-color);
