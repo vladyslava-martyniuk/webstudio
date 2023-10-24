@@ -149,7 +149,9 @@ padding-right: ;
   } 
   .list-adventeges{
     display: flex;
-   gap: 30px;}
+   gap: 30px;
+   align-items: flex-start;gi
+  }
   .advantages-item {
     display: inline-block; 
   }
