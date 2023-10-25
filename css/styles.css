@@ -151,6 +151,9 @@ padding-right: ;
    gap: 30px;
    align-items: flex-start;
   }
+  .advantages-item{
+    display: inline-block;
+  }
   .advantages-item-subtitle {
     color: var(--main-color);
     font-size: 14px;
