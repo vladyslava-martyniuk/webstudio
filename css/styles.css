@@ -66,6 +66,10 @@ display: flex;
 justify-content: space-around;
 align-items: center; 
   }
+  .header .container{
+    display: flex;
+    align-items: center; 
+      }
   .nav {
     font-size: 14px;
     font-weight: 500;
@@ -86,10 +90,7 @@ justify-content: start;
   } 
   .nav-list {
     display:flex;
-    flex-direction:row; 
-    justify-content: flex-start;
     gap: 50px;
-    align-items: flex-start; 
     margin-left: 93px;
   }
   .info-link-item{
@@ -144,16 +145,11 @@ padding-right: ;
   .advantages{
     padding-top: 94px;
     padding-bottom: 94px;
-    justify-content: center;
-    margin-left: 200px;
   } 
   .list-adventeges{
     display: flex;
    gap: 30px;
-   align-items: flex-start;gi
-  }
-  .advantages-item {
-    display: inline-block; 
+   align-items: flex-start;
   }
   .advantages-item-subtitle {
     color: var(--main-color);
