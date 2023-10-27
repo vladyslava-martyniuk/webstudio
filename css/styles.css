@@ -91,7 +91,7 @@ justify-content: start;
   .nav-list {
     display:flex;
     gap: 50px;
-    margin-left: 93px;
+    margin-right:auto;
   }
   .info-link-item{
     color:var(--add-bg-color);
@@ -185,13 +185,23 @@ margin-left:auto;
   gap: 30px;
       justify-content: center;
   }
+  .list-workers { 
+    display: flex; 
+    gap: 30px;
+        justify-content: center;
+    }
+    .workers{
+      background-color: var(--add-color);
+    }
   .workers-title{
+    margin-bottom: 50px;
     color: var(--main-color);
 text-align: center;
 font-size: 36px;
 font-weight: 700;
 letter-spacing: 1.08px;
   }
+  
   .workers-item-subtitle {
  margin-top: 50px;
 margin-bottom: 10px;
@@ -215,6 +225,7 @@ margin-bottom: 10px;
   }
   .logo-footer{
     color: var(--white-color);
+    margin-bottom: 20px;
   }
   .logo-accent {
     color: var(--accent-color);
@@ -228,6 +239,7 @@ margin-bottom: 10px;
   line-height: 24px; 
   letter-spacing: 0.42px;
   text-decoration: none;
+  gap: 9px;
   }
   .address-item-link:first-child {
     color:white;
@@ -235,6 +247,9 @@ margin-bottom: 10px;
   .projects{
     padding-top: 94px;
     padding-bottom:  94px;
+  }
+  .list-filters{
+margin-bottom: 50px; 
   }
   .filters-item-btn{
     color: var(--main-color);
@@ -244,6 +259,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 26px; 
 letter-spacing: 0.48px;
+
    }
 .filters-item-btn:hover{
   background-color: var(--accent-color);
