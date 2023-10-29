@@ -249,7 +249,10 @@ margin-bottom: 10px;
     padding-bottom:  94px;
   }
   .list-filters{
-margin-bottom: 50px; 
+margin-bottom: 50px;
+display: flex; 
+justify-content: center;
+gap: 30px;
   }
   .filters-item-btn{
     color: var(--main-color);
@@ -259,13 +262,27 @@ font-size: 16px;
 font-weight: 500;
 line-height: 26px; 
 letter-spacing: 0.48px;
-
    }
 .filters-item-btn:hover{
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+.list-projects{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+}
+.projects-item-img{
+  width: 370px;
+height: 294px;
+}
+
+.projects-item-img
   .projects-item-subtitle{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4px;
     color: var(--main-color);
 font-size: 18px;
 font-weight: 700;
@@ -273,6 +290,7 @@ line-height: 36px;
 letter-spacing: 1.08px;
   }
   .projects-item-text{
+    margin-bottom: 14px;
     color: var(--add-bg-color);
 font-size: 16px;
 font-weight: 400;
