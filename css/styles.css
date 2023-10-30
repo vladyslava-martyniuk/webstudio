@@ -273,12 +273,8 @@ letter-spacing: 0.48px;
   flex-wrap: wrap;
   gap: 30px;
 }
-.projects-item-img{
-  width: 370px;
-height: 294px;
-}
-
   .projects-item-subtitle{
+    margin-top: 20px;
     margin-bottom: 4px;
     color: var(--main-color);
 font-size: 18px;
