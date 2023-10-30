@@ -232,6 +232,7 @@ margin-bottom: 10px;
     font-family: Raleway,sans-serif;
   }
   .address-item-link {
+   padding-bottom: 9px;
     font-style:normal;
     color: rgba(255, 255, 255, 0.60);
   font-size: 14px;
@@ -267,21 +268,17 @@ letter-spacing: 0.48px;
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-.list-projects{
+.list-projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: flex-start;
 }
 .projects-item-img{
   width: 370px;
 height: 294px;
 }
 
-.projects-item-img
   .projects-item-subtitle{
-    text-align: center;
-    align-items: center;
     margin-bottom: 4px;
     color: var(--main-color);
 font-size: 18px;
