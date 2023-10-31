@@ -47,7 +47,7 @@ img {
   overflow: hidden;
 }
 .container{
-  width: 1220px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -192,6 +192,8 @@ margin-left:auto;
     }
     .workers{
       background-color: var(--add-color);
+      padding-top: 94px;
+      padding-bottom: 94px;
     }
   .workers-title{
     margin-bottom: 50px;
