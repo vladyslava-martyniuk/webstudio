@@ -154,6 +154,7 @@ img {
 }
 .advantages-item-subtitle {
   margin-bottom: 10px;
+  margin-top: 30px;
   color: var(--main-color);
   font-size: 14px;
   font-weight: 700;
@@ -170,6 +171,27 @@ img {
 }
 .advantages-item {
   flex-basis: calc((100% - 90px)/4);
+}
+.advantages-item::before {
+  content: '';
+  display: block;
+  background-color: var(--add-color);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-image: url(../images/advantages_svg1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+.advantages-item:nth-child(2)::before{
+  background-image: url(../images/advantages_svg2.svg)
+}
+.advantages-item:nth-child(3)::before{
+  background-image: url(../images/advantages_svg3.svg)
+}
+.advantages-item:nth-child(4)::before{
+  background-image: url(../images/advantages_svg4.svg)
 }
 .performance {
   padding-top: 0px;
@@ -198,6 +220,11 @@ img {
   background-color: var(--add-color);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.workers-item-wrapper{
+  background-color: var(--white-color);
+  width: 270px;
+height: 368px;
 }
 .workers-title {
   margin-bottom: 50px;
@@ -262,6 +289,8 @@ img {
   gap: 8px;
 }
 .filters-item-btn {
+ min-width: 73px;
+ padding: 6px 22px;
   color: var(--main-color);
   text-align: center;
   font-family: Roboto;
@@ -269,6 +298,8 @@ img {
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.48px;
+  border-radius: 4px;
+  border:none;
 }
 .filters-item-btn:hover {
   background-color: var(--accent-color);
@@ -281,9 +312,15 @@ img {
 }
 .projects-item{
   flex-basis: calc((100% - 60px)/3);
+  border: 1px solid #EEE;
+}
+  .projects-item-wrapper{
+    background-color: var(--white-color);
 }
 .projects-item-subtitle {
   margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   margin-bottom: 4px;
   color: var(--main-color);
   font-size: 18px;
@@ -292,7 +329,9 @@ img {
   letter-spacing: 1.08px;
 }
 .projects-item-text {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   color: var(--add-bg-color);
   font-size: 16px;
   font-weight: 400;
