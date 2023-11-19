@@ -118,6 +118,7 @@ img {
 
 .hero {
   background-color: var(--bg-color);
+  background-image: url(../images/bg_hero_webstudio.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
 }
