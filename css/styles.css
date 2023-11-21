@@ -230,6 +230,7 @@ img {
 .workers-item{
   background-color: var(--white-color); 
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .workers-item-wrapper{
   padding-bottom: 30px;
@@ -324,7 +325,8 @@ img {
   flex-basis: calc((100% - 60px)/3);
   border: 1px solid #EEE;
 }
-.projects-item:hover{
+.projects-item-link{
+  display: block;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
   .projects-item-wrapper{
