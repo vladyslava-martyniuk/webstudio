@@ -229,6 +229,24 @@ img {
   gap: 30px;
   justify-content: center;
 }
+.performance-item {
+  position: relative;
+}
+.performance-item-subtitle {
+  position: absolute;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.80);
+  width: 370px;
+  height: 70px;
+ top: 89%;
+ left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 27px 107px;}
 .list-workers {
   display: flex;
   gap: 30px;
@@ -265,6 +283,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
+  
 }
 .workers-item-text {
   color: var(--add-bg-color);
