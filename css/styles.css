@@ -242,11 +242,12 @@ img {
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.80);
   width: 370px;
-  height: 70px;
  top: 89%;
  left: 50%;
   transform: translate(-50%, -50%);
-  padding: 27px 107px;}
+  padding: 27px;
+  text-align: center;
+}
 .list-workers {
   display: flex;
   gap: 30px;
