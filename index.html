@@ -23,8 +23,7 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="logo">
-          <span class="logo-accent">Web</span>Studio</a
-        >
+          <span class="logo-accent">Web</span>Studio</a >
         <nav class="nav">
           <ul class="list nav-list">
             <li class="nav-item">
@@ -42,16 +41,11 @@
           <li class="info-item">
             <a href="mailto:info@devstudio.com" class="info-link-item"
               ><svg class="info-icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-email"></use></svg
-              >info@devstudio.com</a
-            >
+                <use href="./images/symbol-defs.svg#icon-email"></use></svg >info@devstudio.com</a>
           </li>
           <li class="info-item">
-            <a href="tel:+380961111111" class="info-link-item"
-              ><svg class="info-icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
-              >+380961111111</a
-            >
+            <a href="tel:+380961111111" class="info-link-item"><svg class="info-icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg >+380961111111</a >
           </li>
         </ul>
       </div>
@@ -60,10 +54,10 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">
-            ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />
+            ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="advantages">
@@ -81,22 +75,22 @@
             <li class="advantages-item">
               <h3 class="advantages-item-subtitle">Пунктуальність</h3>
               <p class="advantages-item-text">
-                Завдання організації, особливо рамки <br />та місце навчання
+                Завдання організації, особливо рамки <br >та місце навчання
                 кадрів тягне в себе.
               </p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-item-subtitle">Планування</h3>
               <p class="advantages-item-text">
-                Так само консультація з широким<br />
+                Так само консультація з широким<br >
                 активом значною мірою зумовлює.
               </p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-item-subtitle">Сучасні технології</h3>
               <p class="advantages-item-text">
-                Значимість цих проблем настільки <br />
-                очевидна, що реалізація планових <br />завдань.
+                Значимість цих проблем настільки <br >
+                очевидна, що реалізація планових <br >завдань.
               </p>
             </li>
           </ul>
@@ -267,7 +261,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="workers-item-soc-net">
                     <a href="" class="workers-soc-net-link">
                       <svg width="20" height="20" class="workers-icon">
@@ -388,24 +381,20 @@
             <span class="logo-accent">Web</span>Studio</a
           >
           <address class="address">
-            <a
-              class="address-item-link"
+            <a class="address-item-link"
               href="https://goo.gl/maps/wJGUWYpMPXE8eBvSA"
               target="_blank"
-              class="address-item-map"
               >м.Київ,пр-т Лесі Українки,26</a
-            ><br />
+            ><br >
             <a
               class="address-item-link"
               href="mailto:info@devstudio.com"
               target="_blank"
-              class="address-item-mailto"
               >info@devstudio.com</a
-            ><br />
+            ><br >
             <a
               class="address-item-link"
               href="tel:+380961111111"
-              class="address-item-tel"
               >38 096 111 11 11</a
             >
           </address>
@@ -433,8 +422,7 @@
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>
-
+            </li
             <li class="footer-soc-net-item">
               <a href="" class="footer-soc-net-link">
                 <svg width="20" height="20" class="footer-icon">
@@ -444,7 +432,57 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-div">
+          <p class="footer-form-text">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <input type="email" name="email" placeholder="E-mail" class="footer-form-input">
+            <button type="submit" class="footer-form-btn">Підписатися</button>
+          </form>
+        </div> 
       </div>
     </footer>
-  </body>
-</html>
+    <div >
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type=”button” class="btn" data-modal-close>
+            <svg width="20" height="20" class="modal-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg></button>
+          <p class="modal-form-text">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="modal-form">
+           <label class="modal-form-label">Ім'я</label>
+          <br>
+           <input type="text" name="name"  autofocus class="modal-form-input" required>
+           <svg width="18" height="18" class="modal-form-icon">
+            <use href="./images/symbol-defs.svg#icon-person"></use>
+           </svg><br>
+          <label class="modal-form-label">Телефон</label>
+          <br>
+          <input type="text" name="text" class="modal-form-input" required>
+          <svg width="18" height="18" class="modal-form-icon">
+            <use href="./images/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <br>
+          <label class="modal-form-label">Пошта</label>
+          <br>
+          <input type="email" name="email" class="modal-form-input" required>
+          <svg width="18" height="18" class="modal-form-icon">
+            <use href="./images/symbol-defs.svg#icon-email-modal"></use>
+          </svg>
+          <br>
+          <label class="modal-form-label">Коментар</label>
+          <br>
+          <textarea name="comment"  cols="30" rows="10" placeholder="Введіть текст" class="modal-form-textarea"></textarea> <br>
+          <div class="modal-form-checkbox">
+          <input type="checkbox" class="modal-form-checkbox-input" >
+          <p class="modal-form-checkbox-text">Погоджуюся з розсилкою та приймаю <a href="" class="modal-form-checkbox-link">Умови договору</a></p>
+          </div>
+          <button type="submit" class="modal-form-btn">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    </body>
+    </html>
+  
