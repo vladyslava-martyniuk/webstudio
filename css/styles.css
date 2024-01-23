@@ -182,7 +182,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
   padding: 40px 40px;
   background-color: white;
@@ -511,6 +511,13 @@ img {
  top: 8px;
  right: 8px;
  align-items: center;
+ padding: 6px 6px 6px 6px;
+}
+.btn:hover, .btn:focus{
+  cursor: pointer;
+}
+.btn:hover .modal-icon, .btn:focus .modal-icon{
+  fill: var(--accent-color);
 }
 .modal-form-text{
 color: var(--main-color);
@@ -528,7 +535,6 @@ color: var(--main-color);
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
-  padding-bottom: 4px;
   position: relative;
   display: block;
     position: relative;
@@ -541,6 +547,7 @@ color: var(--main-color);
     border: 1px solid rgba(33, 33, 33, 0.20);
     justify-content: center;
    padding-top: 11px;
+    padding-bottom: 11px;
    padding-left: 42px;
 }
 .modal-form-icon{
