@@ -61,8 +61,6 @@ img {
   text-decoration: none;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -85,6 +83,10 @@ img {
   letter-spacing: 0.28px;
   text-decoration: none;
   justify-content: start;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: block;
 }
 .nav-item-link:hover,
 .nav-item-link:focus {
@@ -104,6 +106,16 @@ img {
   display: flex;
   align-items: center;
 }
+.current::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 0px;
+}
+
 .info-link-item:hover,
 .info-link-item:focus {
   color: var(--accent-color);
@@ -160,7 +172,6 @@ img {
   padding: 10px 32px;
   border-radius: 4px;
 }
-
 .hero-btn:hover {
   cursor: pointer;
 }
@@ -516,12 +527,37 @@ img {
 .projects-item-link {
   display: block;
 }
+.projects-overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+.projects-overley-text {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  padding: 63px 24px;
+}
 .projects-item-link:hover,
 .projects-item-link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+.wrapper-project-image {
+  overflow: hidden;
+  position: relative;
+}
+.projects-item:hover .projects-overley {
+  transform: translateY(0);
+}
 .projects-item-wrapper {
   background-color: var(--white-color);
   padding: 20px 24px;
@@ -626,12 +662,22 @@ img {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
+  outline: none;
 }
-
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-textarea:hover,
+.modal-form-textarea:focus {
+  border-color: var(--accent-color);
+}
 .modal-form-icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
+}
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
 }
 .modal-form-input,
 .modal-form-textarea {
