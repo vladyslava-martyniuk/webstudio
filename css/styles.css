@@ -114,6 +114,7 @@ img {
   background-color: var(--accent-color);
   position: absolute;
   bottom: 0px;
+  border-radius: 2px;
 }
 
 .info-link-item:hover,
