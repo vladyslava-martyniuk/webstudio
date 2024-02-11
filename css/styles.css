@@ -87,6 +87,7 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   display: block;
+  
 }
 .nav-item-link:hover,
 .nav-item-link:focus {
@@ -105,6 +106,10 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
+transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 2s 3s;
 }
 .current::after {
   content: "";
@@ -115,8 +120,13 @@ img {
   position: absolute;
   bottom: 0px;
   border-radius: 2px;
+  transition: opacity,  250ms,
+    cubic-bezier(0.4, 0, 0.2, 1) 2s;
 }
-
+.nav-item-link:hover .current::after,
+.nav-item-link:focus .current::after {
+ opacity: 0.8 ;
+}
 .info-link-item:hover,
 .info-link-item:focus {
   color: var(--accent-color);
@@ -172,9 +182,11 @@ img {
   border: none;
   padding: 10px 32px;
   border-radius: 4px;
+  transition: opacity, 250ms, cubic-bezier(0.4, 0, 0.2, 1), 2s;
 }
 .hero-btn:hover {
   cursor: pointer;
+  opacity: 0.8 ;
 }
 .advantages {
   padding-top: 94px;
@@ -315,6 +327,10 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 3s, 2s;
 }
 .workers-soc-net-link:hover,
 .workers-soc-net-link:focus {
@@ -352,6 +368,10 @@ img {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   justify-content: center;
+ transition-property: border, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 2s, 3s;
 }
 .clients-item-link:hover,
 .clients-item-link:focus {
@@ -419,6 +439,8 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
+  transition: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1), 2s;
+  
 }
 .footer-soc-net-link:hover,
 .footer-soc-link:focus {
@@ -449,6 +471,8 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 358px;
   padding: 15px 0px 15px 16px;
+  transition: border, 250ms, cubic-bezier(0.4, 0, 0.2, 1), 2s;
+
 }
 .footer-form-input:hover,
 .footer-form-input:focus {
@@ -470,6 +494,7 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px 28px 10px 28px;
+  transition: opacity, 250ms, cubic-bezier(0.4, 0, 0.2, 1), 2s;
 }
 .footer-form-btn::after {
   content: "";
@@ -509,6 +534,10 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition-property: border, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 2s, 3s;
 }
 .filters-item-btn:hover {
   background-color: var(--accent-color);
@@ -527,6 +556,10 @@ img {
 }
 .projects-item-link {
   display: block;
+  transition-property: translateY, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 2s, 3s;
 }
 .projects-overley {
   position: absolute;
