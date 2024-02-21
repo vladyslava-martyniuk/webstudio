@@ -710,11 +710,12 @@ color: var(--accent-color);
   opacity: 0;
   pointer-events: none;
 }
-.backdrop is-hidden.modal{
-  transform: translateX(-100%);
-}
+
 .no-scroll {
   overflow: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: translateX(-100%);
 }
 
 .modal {
